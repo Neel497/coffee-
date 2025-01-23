@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Single Serve Pour Overs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <script>
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.classList.remove('hidden');
+      setTimeout(() => {
+        popup.classList.add('hidden');
+      }, 3000);
+    }
+  </script>
+</head>
+<body class="font-roboto">
+  <!-- Header -->
+  <header class="flex justify-between items-center py-4 px-8 bg-green-200">
+    <div class="flex items-center space-x-4">
+      <a href="home.html" class="text-gray-700">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <img alt="Copper Cow Coffee Logo" class="h-12" height="100" src="https://storage.googleapis.com/a1aa/image/saeqYorpWyUrPavi2pMP1e4PbLBfKHwxq4tc8ZmC15Wsz7NoA.jpg" width="80"/>
+    </div>
+    <h1 class="text-2xl font-bold text-gray-700 uppercase">Coffee</h1>
+    <div></div> <!-- Empty div to balance the flex layout -->
+  </header>
+  <!-- Main Content -->
+  <main class="px-8">
+    <h1 class="text-3xl font-bold text-center my-8">Single Serve Pour Overs</h1>
+    <p class="text-center mb-8">
+      Brew a cup of smooth Vietnamese coffee with our pre-filled single serve pour over coffee filters. Great for home or on-the-go!
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Product 1 -->
+      <div class="text-center">
+        <img alt="Pour Over Stocking Stuffer" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/9vUM709wErL8IFjfCCBvyur0XgtsLnUw29lpB9A28UbgjrDKA.jpg" width="200"/>
+        <p class="text-lg font-bold">Pour Over Stocking Stuffer</p>
+        <p class="text-green-600">$10</p>
+        <button class="bg-green-800 text-white py-2 px-4 rounded mt-2" onclick="showPopup()">Add to cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="text-center">
+        <img alt="Classic Black Rip n' Drip Coffee" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/0ESVrjl6LZraCJxGye6vCfbfWnhof6Q8ixpeicxFBSIq446gC.jpg" width="200"/>
+        <p class="text-lg font-bold">Classic Black Rip n' Drip Coffee</p>
+        <p class="text-green-600">$13</p>
+        <button class="bg-green-800 text-white py-2 px-4 rounded mt-2" onclick="showPopup()">Add to cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="text-center">
+        <img alt="Churro Rip n' Drip Coffee" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/dofTtl9JzmSgT6Psur9sKY924O2CUQaLjlAbRoi1jl8jjrDKA.jpg" width="200"/>
+        <p class="text-lg font-bold">Churro Rip n' Drip Coffee</p>
+        <p class="text-green-600">$13</p>
+        <button class="bg-green-800 text-white py-2 px-4 rounded mt-2" onclick="showPopup()">Add to cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="text-center">
+        <img alt="Vanilla Rip n' Drip Coffee" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ZRuLXNj1s4bfbCYZACIS0CknfYIHFFFgcWDOIBwl1BHDHXHUA.jpg" width="200"/>
+        <p class="text-lg font-bold">Vanilla Rip n' Drip Coffee</p>
+        <p class="text-green-600">$13</p>
+        <button class="bg-green-800 text-white py-2 px-4 rounded mt-2" onclick="showPopup()">Add to cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div class="text-center">
+        <img alt="Salted Caramel Rip n' Drip Coffee" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/v79LVP3iEbYeIywTs2zRxh3YiLzHiqwBaLi3hCqUJWmkjrDKA.jpg" width="200"/>
+        <p class="text-lg font-bold">Salted Caramel Rip n' Drip Coffee</p>
+        <p class="text-green-600">$16</p>
+        <button class="bg-green-800 text-white py-2 px-4 rounded mt-2" onclick="showPopup()">Add to cart</button>
+      </div>
+      <!-- Product 6 -->
+      <div class="text-center">
+        <img alt="Decaf Classic Black Rip n' Drip Coffee" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/0IgeCjiFUlUjLyWjni0fDOhyX3my7zThwJffUalJO6eS446gC.jpg" width="200"/>
+        <p class="text-lg font-bold">Decaf Classic Black Rip n' Drip Coffee</p>
+        <p class="text-green-600">$16</p>
+        <button class="bg-green-800 text-white py-2 px-4 rounded mt-2" onclick="showPopup()">Add to cart</button>
+      </div>
+    </div>
+  </main>
+  <!-- Popup Notification -->
+  <div class="fixed bottom-4 right-4 bg-green-500 text-white py-2 px-4 rounded shadow-lg hidden" id="popup">
+    Product added successfully!
+  </div>
+</body>
+</html>
